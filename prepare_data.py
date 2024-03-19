@@ -86,7 +86,7 @@ params.nsl_map_to_five_classes = True
 
 # IDS 2017 params
 params.ids2017_small = False
-params.ids2017_datasets_dir = '../Datasets/CIC_IDS_2017/MachineLearningCSV/MachineLearningCVE'
+params.ids2017_datasets_dir = '/Datasets/CIC_IDS_2017/MachineLearningCSV/MachineLearningCVE'
 params.ids2017_files_list = [
                 'Friday-WorkingHours-Afternoon-DDos.pcap_ISCX.csv',
                 'Friday-WorkingHours-Afternoon-PortScan.pcap_ISCX.csv',
@@ -100,7 +100,7 @@ params.ids2017_files_list = [
 
 params.ids2017_hist_num_bins = 10000
 
-params.ids2017_flows_dir = '../Datasets/CIC_IDS_2017/GeneratedLabelledFlows/TrafficLabelling'
+params.ids2017_flows_dir = '/Datasets/CIC_IDS_2017/GeneratedLabelledFlows/TrafficLabelling'
 params.ids2017_flow_seqs_max_flow_seq_length = 100
 params.ids2017_flow_seqs_max_flow_duration_secs = 3
 
@@ -766,9 +766,9 @@ def main():
 
     # prepare_kdd99_full_datasets(params)
 
-    prepare_nsl_kdd_datasets(params)
+    #prepare_nsl_kdd_datasets(params)
 
-    # prepare_ids2017_datasets(params)  # Small subset vs. full is controlled by config flag
+    prepare_ids2017_datasets(params)  # Small subset vs. full is controlled by config flag
 
 
     # Following 3 are for preparing the IDS 2018 dataset (20% subset)

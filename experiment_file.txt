@@ -1,0 +1,25 @@
+results_dir: '/Users/ssf/PycharmProjects/Results/'
+experiment_num: 1
+model_origin: 'new'
+model_type: 'classifier'
+model: 'ann'
+normal_label: 'BENIGN'
+training_data_feed: preload
+scaling_type: NA
+action: train_test
+dataset_dir: '/Users/ssf/PycharmProjects/Datasets/dummy/'
+training_set: train_set_only
+class_weights: 0
+tensorboard_log_dir: '/Users/ssf/PycharmProjects/Results/'
+
+#input_nodes:
+#output_nodes:
+ann_layer_units: 128, 64, 32, 16
+ann_layer_activations: 'relu', 'relu', 'relu', 'relu'
+ann_layer_dropout_rates: 0.05, 0.20, 0.50
+epochs:  300
+early_stop_patience: 50
+batch_size: 32, 64, 256, 1024
+#goal_metric:
+#split_random_seed:
+#dataset_split_ratio:

@@ -1,7 +1,10 @@
 import logging
 
-from keras.layers import Input, Dense, Dropout, Activation
-from keras.layers.normalization import BatchNormalization
+from keras.layers import Input, Activation
+#from keras.layers.normalization import BatchNormalization
+from tensorflow.keras.layers import (
+    BatchNormalization, Dropout, Dense
+)
 from keras.models import Model
 from keras.models import Sequential
 from keras import regularizers

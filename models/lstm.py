@@ -1,6 +1,9 @@
 from keras.models import Sequential
 from keras.layers import LSTM, Dense, Dropout, TimeDistributed
-from keras.layers.normalization import BatchNormalization
+#from keras.layers.normalization import BatchNormalization
+from tensorflow.keras.layers import (
+    BatchNormalization, Dropout, Dense
+)
 from keras.callbacks import EarlyStopping, TensorBoard
 import logging
 from keras_callbacks import ModelCheckpointer, Metrics, WeightRestorer, StopperOnGoal
